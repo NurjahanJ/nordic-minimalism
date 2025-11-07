@@ -25,13 +25,13 @@
     --color-text-secondary: #6B6B6B;
     --color-text-light: #8A8A8A;
     
-    /* Nordic Spacing Scale - Generous */
+    /* Nordic Spacing Scale - Generous (Phase 2 specifications) */
     --space-xs: 8px;
     --space-s: 16px;
     --space-m: 32px;
-    --space-l: 64px;
-    --space-xl: 96px;
-    --space-xxl: 128px;
+    --space-l: 64px;        /* Wide margins minimum */
+    --space-xl: 96px;       /* Large section gaps */
+    --space-xxl: 128px;     /* Maximum section spacing */
     
     /* Typography Scale - Humanist, generous line-height */
     --font-size-small: 14px;
@@ -50,9 +50,9 @@
     --radius-soft: 8px;
     --radius-gentle: 4px;
     
-    /* Shadows - Subtle, barely visible */
-    --shadow-soft: 0 2px 8px rgba(74, 74, 74, 0.08);
-    --shadow-gentle: 0 1px 4px rgba(74, 74, 74, 0.06);
+    /* Shadows - Subtle, barely visible (Phase 2 specifications) */
+    --shadow-soft: 0 4px 16px rgba(0, 0, 0, 0.04);
+    --shadow-gentle: 0 2px 8px rgba(0, 0, 0, 0.02);
 }
 
 /* ===== BASE TYPOGRAPHY ===== */
@@ -99,10 +99,16 @@ p {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 var(--space-m);
+    padding: 0 var(--space-l);  /* Wide margins (64px+) */
 }
 
 /* Single column preferred - avoid multi-column complexity */
+.content-container {
+    max-width: 720px;  /* Single-column readability */
+    margin: 0 auto;
+    padding: 0 var(--space-l);
+}
+
 @media (min-width: 768px) {
     .container {
         padding: 0 var(--space-l);
@@ -130,6 +136,12 @@ p {
     font-weight: 300;
     color: var(--color-text-primary);
     margin: 0;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.logo:hover {
+    color: var(--color-accent-sage);
 }
 
 .nav-menu {
@@ -201,6 +213,28 @@ p {
 
 .section:nth-child(even) {
     background-color: var(--color-base-linen);
+}
+
+/* ===== PAGE HEADERS ===== */
+.page-header {
+    padding: var(--space-xxl) 0 var(--space-xl);
+    text-align: center;
+    background-color: var(--color-base-linen);
+}
+
+.page-title {
+    font-size: var(--font-size-h1);
+    font-weight: 300;
+    margin-bottom: var(--space-s);
+    color: var(--color-text-primary);
+}
+
+.page-subtitle {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-secondary);
+    line-height: var(--line-height-relaxed);
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .section-title {
@@ -431,6 +465,328 @@ button:focus {
     outline-offset: 2px;
 }
 
+/* ===== TIMELINE PAGE STYLES ===== */
+.timeline-section {
+    padding: var(--space-xxl) 0;
+}
+
+.timeline {
+    position: relative;
+    padding-left: var(--space-m);
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: var(--color-accent-sage);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: var(--space-xxl);
+    padding-left: var(--space-l);
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -9px;
+    top: 8px;
+    width: 16px;
+    height: 16px;
+    background-color: var(--color-accent-sage);
+    border-radius: 50%;
+    border: 3px solid var(--color-base-warm-white);
+}
+
+.timeline-year {
+    font-size: var(--font-size-small);
+    font-weight: 600;
+    color: var(--color-accent-sage);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: var(--space-xs);
+}
+
+.timeline-title {
+    font-size: var(--font-size-h3);
+    font-weight: 500;
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-s);
+}
+
+.timeline-text {
+    color: var(--color-text-secondary);
+    line-height: var(--line-height-loose);
+}
+
+.timeline-principles {
+    padding: var(--space-xxl) 0;
+    background-color: var(--color-base-linen);
+}
+
+.principles-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-l);
+    margin-top: var(--space-xl);
+}
+
+@media (min-width: 768px) {
+    .principles-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.principle-card {
+    background-color: var(--color-base-warm-white);
+    padding: var(--space-l);
+    border-radius: var(--radius-soft);
+    box-shadow: var(--shadow-gentle);
+}
+
+.principle-title {
+    font-size: var(--font-size-xl);
+    font-weight: 500;
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-s);
+}
+
+.principle-text {
+    color: var(--color-text-secondary);
+    line-height: var(--line-height-loose);
+}
+
+/* ===== DESIGNERS PAGE STYLES ===== */
+.designers-section {
+    padding: var(--space-xxl) 0;
+}
+
+.designer-category {
+    margin-bottom: var(--space-xxl);
+}
+
+.category-title {
+    font-size: var(--font-size-h2);
+    font-weight: 500;
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-xl);
+    text-align: center;
+}
+
+.designer-card {
+    background-color: var(--color-base-linen);
+    padding: var(--space-l);
+    border-radius: var(--radius-soft);
+    margin-bottom: var(--space-l);
+    box-shadow: var(--shadow-gentle);
+}
+
+.designer-name {
+    font-size: var(--font-size-h3);
+    font-weight: 500;
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-xs);
+}
+
+.designer-years {
+    font-size: var(--font-size-small);
+    color: var(--color-accent-sage);
+    font-weight: 500;
+    margin-bottom: var(--space-s);
+}
+
+.designer-description {
+    color: var(--color-text-secondary);
+    line-height: var(--line-height-loose);
+    margin-bottom: var(--space-m);
+}
+
+.contributions-title {
+    font-size: var(--font-size-lg);
+    font-weight: 500;
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-s);
+}
+
+.contributions-list {
+    list-style: none;
+    padding: 0;
+}
+
+.contributions-list li {
+    position: relative;
+    padding-left: var(--space-s);
+    margin-bottom: var(--space-xs);
+    color: var(--color-text-secondary);
+}
+
+.contributions-list li::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    color: var(--color-accent-taupe);
+}
+
+.design-philosophy {
+    padding: var(--space-xxl) 0;
+    background-color: var(--color-base-linen);
+}
+
+.philosophy-text {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-secondary);
+    line-height: var(--line-height-loose);
+    text-align: center;
+    max-width: 800px;
+    margin: var(--space-xl) auto 0;
+}
+
+/* ===== ABOUT PAGE STYLES ===== */
+.about-intro {
+    padding: var(--space-xxl) 0;
+}
+
+.intro-text {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-secondary);
+    line-height: var(--line-height-loose);
+    margin-bottom: var(--space-m);
+}
+
+.core-philosophy {
+    padding: var(--space-xxl) 0;
+    background-color: var(--color-base-linen);
+}
+
+.philosophy-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-l);
+    margin-top: var(--space-xl);
+}
+
+@media (min-width: 768px) {
+    .philosophy-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.philosophy-item {
+    background-color: var(--color-base-warm-white);
+    padding: var(--space-l);
+    border-radius: var(--radius-soft);
+    box-shadow: var(--shadow-gentle);
+    text-align: center;
+}
+
+.philosophy-title {
+    font-size: var(--font-size-xl);
+    font-weight: 500;
+    color: var(--color-accent-sage);
+    margin-bottom: var(--space-s);
+}
+
+.philosophy-description {
+    color: var(--color-text-secondary);
+    line-height: var(--line-height-loose);
+}
+
+.design-principles {
+    padding: var(--space-xxl) 0;
+}
+
+.principle-detailed {
+    margin-bottom: var(--space-xl);
+}
+
+.principle-detailed .principle-title {
+    font-size: var(--font-size-h3);
+    font-weight: 500;
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-s);
+}
+
+.principle-detailed .principle-text {
+    color: var(--color-text-secondary);
+    line-height: var(--line-height-loose);
+    font-size: var(--font-size-lg);
+}
+
+.visual-characteristics {
+    padding: var(--space-xxl) 0;
+    background-color: var(--color-base-linen);
+}
+
+.characteristics-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-l);
+    margin-top: var(--space-xl);
+}
+
+@media (min-width: 768px) {
+    .characteristics-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.characteristic-item {
+    background-color: var(--color-base-warm-white);
+    padding: var(--space-m);
+    border-radius: var(--radius-soft);
+    box-shadow: var(--shadow-gentle);
+}
+
+.characteristic-title {
+    font-size: var(--font-size-lg);
+    font-weight: 500;
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-xs);
+}
+
+.characteristic-text {
+    color: var(--color-text-secondary);
+    line-height: var(--line-height-relaxed);
+}
+
+.cultural-context,
+.modern-relevance {
+    padding: var(--space-xxl) 0;
+}
+
+.context-text,
+.relevance-text {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-secondary);
+    line-height: var(--line-height-loose);
+    margin-bottom: var(--space-m);
+}
+
+.conclusion {
+    padding: var(--space-xxl) 0;
+    background-color: var(--color-base-linen);
+}
+
+.conclusion-text {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-secondary);
+    line-height: var(--line-height-loose);
+    text-align: center;
+    max-width: 800px;
+    margin: var(--space-xl) auto 0;
+}
+
+/* ===== ACTIVE NAVIGATION STATE ===== */
+.nav-link.active {
+    color: var(--color-accent-sage);
+    background-color: var(--color-base-linen);
+}
+
 /* ===== NORDIC DESIGN VALIDATION ===== */
 /* This CSS implements all key Nordic minimalism principles:
    ✓ Warm neutrals (no pure white/black)
@@ -440,4 +796,7 @@ button:focus {
    ✓ Single column layouts (no complex multi-column)
    ✓ Natural color palette (sage, taupe, warm grays)
    ✓ Calm and inviting (passes the "hygge" test)
+   ✓ Phase 2: Wide margins (64px+), large gaps (96-128px)
+   ✓ Phase 2: Single-column max-width 720px for readability
+   ✓ Phase 2: Subtle shadows (0px 4px 16px rgba(0,0,0,0.04))
 */
