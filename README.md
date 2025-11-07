@@ -76,11 +76,6 @@ nordic-minimalism/
 ## Documentation
 
 For complete project documentation, design system details, and implementation notes, see [`docs/project-documentation.md`](docs/project-documentation.md).
-
-## License
-
-This project is for educational and demonstration purposes, showcasing Nordic design principles through web implementation.
-
 ---
 
 *"When in doubt, add more white space. Nordic design breathes."*
