@@ -3,10 +3,10 @@
     "hero-main": {
       "filename": "hero-main.jpg",
       "path": "C:\\Users\\Nurja\\Projects\\nordic-minimalism\\images\\hero\\hero-main.jpg",
-      "alt_text": "Scandinavian living room illuminated by natural light, featuring birch furniture, linen textiles, sage green accents, and a cozy hygge atmosphere.",
-      "prompt": "Professional photography in authentic Nordic minimalism style, \n        warm and inviting atmosphere, natural materials, soft lighting, \n        muted earth tones, hygge feeling, lagom balance, democratic design principles, Scandinavian living room with natural light, birch furniture, warm atmosphere, Scandinavian living room with natural light streaming through large windows, birch wood furniture, linen textiles, sage green accents, cozy hygge atmosphere, Use authentic Nordic color palette: warm whites (#FAFAF9), \n        linen (#F5F4F0), sage green (#8B9A8A), warm taupe (#B4A89A), \n        natural wood tones, soft grays, never pure white or black",
-      "user_prompt": "Scandinavian living room with natural light, birch furniture, warm atmosphere",
-      "generated": "2025-11-10T14:36:18.824142",
+      "alt_text": "Simple, cozy Nordic minimalist living room with earth tone decor, soft lighting, and Scandinavian furniture.",
+      "prompt": "Professional photography in authentic Nordic minimalism style, \n        warm and inviting atmosphere, natural materials, soft lighting, \n        muted earth tones, hygge feeling, lagom balance, democratic design principles, Dark moody Nordic minimalist living room with warm wood tones, soft natural lighting from large windows, cozy textiles, muted earth colors, Scandinavian furniture, hygge atmosphere, serene and contemplative, deeper shadows, rich textures, Scandinavian living room with natural light streaming through large windows, birch wood furniture, linen textiles, sage green accents, cozy hygge atmosphere, Use authentic Nordic color palette: warm whites (#FAFAF9), \n        linen (#F5F4F0), sage green (#8B9A8A), warm taupe (#B4A89A), \n        natural wood tones, soft grays, never pure white or black",
+      "user_prompt": "Dark moody Nordic minimalist living room with warm wood tones, soft natural lighting from large windows, cozy textiles, muted earth colors, Scandinavian furniture, hygge atmosphere, serene and contemplative, deeper shadows, rich textures",
+      "generated": "2025-11-10T18:03:28.837132",
       "category": "hero",
       "style": "nordic_minimalism"
     },
@@ -31,5 +31,5 @@
       "style": "nordic_minimalism"
     }
   },
-  "last_updated": "2025-11-10T14:48:55.776621"
+  "last_updated": "2025-11-10T18:03:28.837158"
 }
