@@ -9,21 +9,26 @@
 
 /* ===== NORDIC COLOR PALETTE ===== */
 :root {
-    /* Base Colors - Warm, never pure white/black */
+    /* Base Colors - Enhanced warmth and depth */
     --color-base-warm-white: #FAFAF9;
+    --color-base-cream: #F8F7F4;
     --color-base-linen: #F5F4F0;
     --color-neutral-greige: #E5E3DD;
     --color-neutral-warm-gray: #CCC9C1;
     
-    /* Accent Colors - Muted, natural */
+    /* Accent Colors - Richer Nordic palette */
     --color-accent-sage: #8B9A8A;
+    --color-accent-sage-deep: #7A8471;
     --color-accent-taupe: #B4A89A;
+    --color-accent-terracotta: #D4B5A0;
     --color-accent-dusty-blue: #9EADB8;
+    --color-wood-warm: #C4A484;
     
-    /* Text Colors - Warm charcoal, never pure black */
-    --color-text-primary: #4A4A4A;
-    --color-text-secondary: #6B6B6B;
-    --color-text-light: #8A8A8A;
+    /* Text Colors - Improved hierarchy and readability */
+    --color-text-primary: #2C2C2C;
+    --color-text-secondary: #4A4A4A;
+    --color-text-light: #6B6B6B;
+    --color-text-accent: #8B7355;
     
     /* Nordic Spacing Scale - Generous (Phase 2 specifications) */
     --space-xs: 8px;
@@ -117,9 +122,13 @@ p {
 
 /* ===== HEADER & NAVIGATION ===== */
 .header {
-    background-color: var(--color-base-warm-white);
+    background: rgba(248, 247, 244, 0.95);
+    backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--color-neutral-greige);
     padding: var(--space-m) 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .nav {
@@ -172,7 +181,25 @@ p {
 /* ===== HERO SECTION ===== */
 .hero {
     padding: var(--space-xxl) 0;
-    background-color: var(--color-base-warm-white);
+    background: 
+        linear-gradient(rgba(248, 247, 244, 0.85), rgba(248, 247, 244, 0.85)),
+        url('images/hero/hero-main.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('images/textures/texture-birch-wood_400w.webp');
+    opacity: 0.02;
+    pointer-events: none;
 }
 
 .hero-content {
@@ -209,10 +236,33 @@ p {
 /* ===== SECTIONS ===== */
 .section {
     padding: var(--space-xl) 0;
+    position: relative;
 }
 
 .section:nth-child(even) {
-    background-color: var(--color-base-linen);
+    background-color: var(--color-base-cream);
+}
+
+.section:nth-child(odd) {
+    background-color: var(--color-base-warm-white);
+}
+
+/* Subtle texture overlays for visual depth */
+.section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('images/textures/texture-linen-fabric_400w.webp');
+    opacity: 0.015;
+    pointer-events: none;
+}
+
+.section:nth-child(even)::before {
+    background-image: url('images/textures/texture-birch-wood_400w.webp');
+    opacity: 0.02;
 }
 
 /* ===== PAGE HEADERS ===== */
@@ -260,18 +310,87 @@ p {
 
 .philosophy-item {
     text-align: center;
-    padding: var(--space-m);
+    padding: var(--space-l);
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: var(--radius-soft);
+    box-shadow: var(--shadow-gentle);
+    position: relative;
+    overflow: hidden;
+}
+
+.philosophy-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('images/textures/texture-linen-fabric_400w.webp');
+    opacity: 0.03;
+    pointer-events: none;
+}
+
+.philosophy-visual {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto var(--space-m);
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: var(--color-accent-sage);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.philosophy-visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
 }
 
 .philosophy-title {
-    color: var(--color-accent-sage);
+    color: var(--color-accent-sage-deep);
     margin-bottom: var(--space-s);
     font-weight: 500;
+    font-size: var(--font-size-h3);
 }
 
 .philosophy-text {
     color: var(--color-text-secondary);
     line-height: var(--line-height-relaxed);
+    position: relative;
+    z-index: 1;
+}
+
+/* ===== VISUAL DIVIDERS ===== */
+.section-divider {
+    height: 1px;
+    background: linear-gradient(
+        90deg,
+        transparent 0%,
+        var(--color-accent-sage) 20%,
+        var(--color-accent-taupe) 50%,
+        var(--color-accent-sage) 80%,
+        transparent 100%
+    );
+    margin: var(--space-xl) 0;
+    opacity: 0.3;
+}
+
+.visual-break {
+    text-align: center;
+    margin: var(--space-xxl) 0;
+}
+
+.visual-break img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: var(--shadow-soft);
+    opacity: 0.8;
 }
 
 /* ===== PRINCIPLES SECTION ===== */
@@ -463,6 +582,34 @@ a:focus,
 button:focus {
     outline: 2px solid var(--color-accent-sage);
     outline-offset: 2px;
+}
+
+/* ===== SUBTLE ANIMATIONS ===== */
+.philosophy-item,
+.principle,
+.example-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.philosophy-item:hover,
+.principle:hover,
+.example-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-soft);
+}
+
+.philosophy-visual img {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.philosophy-visual:hover img {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
 }
 
 /* ===== TIMELINE PAGE STYLES ===== */

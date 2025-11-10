@@ -19,7 +19,17 @@
       "generated": "2025-11-10T14:36:58.571393",
       "category": "textures",
       "style": "nordic_minimalism"
+    },
+    "texture-linen-fabric": {
+      "filename": "texture-linen-fabric.jpg",
+      "path": "C:\\Users\\Nurja\\Projects\\nordic-minimalism\\images\\textures\\texture-linen-fabric.jpg",
+      "alt_text": "Authentic Nordic minimalism in photography with warm tones, soft lighting, and natural textures",
+      "prompt": "Professional photography in authentic Nordic minimalism style, \n        warm and inviting atmosphere, natural materials, soft lighting, \n        muted earth tones, hygge feeling, lagom balance, democratic design principles, natural linen fabric texture in warm cream color, organic weave pattern, soft lighting, Natural linen fabric texture in warm off-white, organic weave pattern, soft and tactile appearance, Nordic textile aesthetic, Use authentic Nordic color palette: warm whites (#FAFAF9), \n        linen (#F5F4F0), sage green (#8B9A8A), warm taupe (#B4A89A), \n        natural wood tones, soft grays, never pure white or black",
+      "user_prompt": "natural linen fabric texture in warm cream color, organic weave pattern, soft lighting",
+      "generated": "2025-11-10T14:48:55.776605",
+      "category": "textures",
+      "style": "nordic_minimalism"
     }
   },
-  "last_updated": "2025-11-10T14:36:58.571407"
+  "last_updated": "2025-11-10T14:48:55.776621"
 }
