@@ -1,0 +1,25 @@
+{
+  "images": {
+    "hero-main": {
+      "filename": "hero-main.jpg",
+      "path": "C:\\Users\\Nurja\\Projects\\nordic-minimalism\\images\\hero\\hero-main.jpg",
+      "alt_text": "Scandinavian living room illuminated by natural light, featuring birch furniture, linen textiles, sage green accents, and a cozy hygge atmosphere.",
+      "prompt": "Professional photography in authentic Nordic minimalism style, \n        warm and inviting atmosphere, natural materials, soft lighting, \n        muted earth tones, hygge feeling, lagom balance, democratic design principles, Scandinavian living room with natural light, birch furniture, warm atmosphere, Scandinavian living room with natural light streaming through large windows, birch wood furniture, linen textiles, sage green accents, cozy hygge atmosphere, Use authentic Nordic color palette: warm whites (#FAFAF9), \n        linen (#F5F4F0), sage green (#8B9A8A), warm taupe (#B4A89A), \n        natural wood tones, soft grays, never pure white or black",
+      "user_prompt": "Scandinavian living room with natural light, birch furniture, warm atmosphere",
+      "generated": "2025-11-10T14:36:18.824142",
+      "category": "hero",
+      "style": "nordic_minimalism"
+    },
+    "texture-birch-wood": {
+      "filename": "texture-birch-wood.jpg",
+      "path": "C:\\Users\\Nurja\\Projects\\nordic-minimalism\\images\\textures\\texture-birch-wood.jpg",
+      "alt_text": "Authentic Nordic minimalism photography featuring warm earth tones, natural birch wood texture, soft lighting, and balanced hygge design.",
+      "prompt": "Professional photography in authentic Nordic minimalism style, \n        warm and inviting atmosphere, natural materials, soft lighting, \n        muted earth tones, hygge feeling, lagom balance, democratic design principles, Close-up of beautiful birch wood grain texture, natural blonde wood, soft organic patterns, warm lighting, high resolution detail, Use authentic Nordic color palette: warm whites (#FAFAF9), \n        linen (#F5F4F0), sage green (#8B9A8A), warm taupe (#B4A89A), \n        natural wood tones, soft grays, never pure white or black",
+      "user_prompt": null,
+      "generated": "2025-11-10T14:36:58.571393",
+      "category": "textures",
+      "style": "nordic_minimalism"
+    }
+  },
+  "last_updated": "2025-11-10T14:36:58.571407"
+}
