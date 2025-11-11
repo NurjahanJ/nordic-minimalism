@@ -1,10 +1,6 @@
 # Nordic Minimalism
 
-[![Deploy to GitHub Pages](https://github.com/[username]/nordic-minimalism/actions/workflows/deploy.yml/badge.svg)](https://github.com/[username]/nordic-minimalism/actions/workflows/deploy.yml)
-
 A comprehensive website demonstrating authentic Scandinavian design principles through research-driven implementation.
-
-🌐 **[Live Site](https://[username].github.io/nordic-minimalism)** | [Documentation](docs/DEPLOYMENT.md)
 
 ## About
 
@@ -76,17 +72,6 @@ nordic-minimalism/
 - **Museums**: Designmuseum Danmark, ArkDes Stockholm, Museum of Finnish Architecture
 - **Publications**: Kinfolk Magazine, Ark Journal, Scandinavian Design (Taschen)
 - **Studios**: Norm Architects, FRAMA CPH, Muuto, Note Design Studio
-
-## Deployment
-
-This site is automatically deployed to GitHub Pages using GitHub Actions.
-
-### Quick Deploy
-1. Push your changes to the `main` branch
-2. GitHub Actions automatically builds and deploys
-3. Site available at `https://[username].github.io/nordic-minimalism`
-
-For detailed deployment instructions, see [`DEPLOYMENT.md`](DEPLOYMENT.md).
 
 ## Documentation
 
