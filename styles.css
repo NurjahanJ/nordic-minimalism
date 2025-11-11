@@ -445,7 +445,7 @@ p {
     margin: 0 auto;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
     .philosophy-grid {
         grid-template-columns: repeat(3, 1fr);
         gap: var(--space-xl);
@@ -1135,9 +1135,10 @@ html {
     margin-top: var(--space-xl);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
     .philosophy-grid {
         grid-template-columns: repeat(3, 1fr);
+        gap: var(--space-xl);
     }
 }
 
