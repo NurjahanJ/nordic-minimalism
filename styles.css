@@ -32,11 +32,11 @@
     
     /* Nordic Spacing Scale - Generous (Phase 2 specifications) */
     --space-xs: 8px;
-    --space-s: 12px;
-    --space-m: 16px;
-    --space-l: 24px;
-    --space-xl: 32px;
-    --space-xxl: 48px;
+    --space-s: 16px;
+    --space-m: 32px;
+    --space-l: 64px;
+    --space-xl: 96px;
+    --space-xxl: 128px;
     
     /* Section Padding Scale - 96/128/160px */
     --section-padding-s: 96px;
@@ -45,7 +45,10 @@
     
     /* Typography Scale - Nordic hierarchy */
     --font-size-caption: 14px;
+    --font-size-small: 16px;
     --font-size-body: 18px;
+    --font-size-lg: 20px;
+    --font-size-xl: 22px;
     --font-size-h3: 24px;
     --font-size-h2: 38px;
     --font-size-h1: 48px;
@@ -54,6 +57,7 @@
     --line-height-tight: 1.2;
     --line-height-normal: 1.4;
     --line-height-body: 1.7;
+    --line-height-relaxed: 1.6;
     --line-height-loose: 1.8;
     
     /* Border Radius - Soft, not sharp */
