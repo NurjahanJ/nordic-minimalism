@@ -29,7 +29,37 @@
       "generated": "2025-11-10T14:48:55.776605",
       "category": "textures",
       "style": "nordic_minimalism"
+    },
+    "designers-hero": {
+      "filename": "designers-hero.jpg",
+      "path": "C:\\Users\\Nurja\\Projects\\nordic-minimalism\\images\\hero\\designers-hero.jpg",
+      "alt_text": "Scandinavian minimalism in professional photography of a Nordic design studio workspace, featuring natural wood tones and muted colors.",
+      "prompt": "Professional photography in authentic Nordic minimalism style, \n        warm and inviting atmosphere, natural materials, soft lighting, \n        muted earth tones, hygge feeling, lagom balance, democratic design principles, Nordic design studio workspace with clean minimalist furniture pieces, natural wood materials, design sketches and blueprints on walls, soft natural lighting, Scandinavian design tools and materials, creative workspace atmosphere, birch wood desk, modern ergonomic chair, design books, warm and inspiring, Nordic minimalism inspired scene with natural materials, warm lighting, and calm atmosphere, Use authentic Nordic color palette: warm whites (#FAFAF9), \n        linen (#F5F4F0), sage green (#8B9A8A), warm taupe (#B4A89A), \n        natural wood tones, soft grays, never pure white or black",
+      "user_prompt": "Nordic design studio workspace with clean minimalist furniture pieces, natural wood materials, design sketches and blueprints on walls, soft natural lighting, Scandinavian design tools and materials, creative workspace atmosphere, birch wood desk, modern ergonomic chair, design books, warm and inspiring",
+      "generated": "2025-11-10T18:17:06.533724",
+      "category": "hero",
+      "style": "nordic_minimalism"
+    },
+    "timeline-evolution": {
+      "filename": "timeline-evolution.jpg",
+      "path": "C:\\Users\\Nurja\\Projects\\nordic-minimalism\\images\\hero\\timeline-evolution.jpg",
+      "alt_text": "Collage of Nordic minimalism evolution from 1940s Scandinavia to present, featuring vintage IKEA designs.",
+      "prompt": "Professional photography in authentic Nordic minimalism style, \n        warm and inviting atmosphere, natural materials, soft lighting, \n        muted earth tones, hygge feeling, lagom balance, democratic design principles, Nordic minimalism timeline collage showing evolution from 1940s post-war Scandinavia to modern global influence, vintage Scandinavian furniture pieces, Alvar Aalto designs, Danish Modern chairs, IKEA democratic design, contemporary Nordic interiors, clean layout with warm neutral background, historical progression, minimalist aesthetic, authentic Nordic design elements arranged chronologically, Nordic minimalism inspired scene with natural materials, warm lighting, and calm atmosphere, Use authentic Nordic color palette: warm whites (#FAFAF9), \n        linen (#F5F4F0), sage green (#8B9A8A), warm taupe (#B4A89A), \n        natural wood tones, soft grays, never pure white or black",
+      "user_prompt": "Nordic minimalism timeline collage showing evolution from 1940s post-war Scandinavia to modern global influence, vintage Scandinavian furniture pieces, Alvar Aalto designs, Danish Modern chairs, IKEA democratic design, contemporary Nordic interiors, clean layout with warm neutral background, historical progression, minimalist aesthetic, authentic Nordic design elements arranged chronologically",
+      "generated": "2025-11-10T18:53:50.768327",
+      "category": "hero",
+      "style": "nordic_minimalism"
+    },
+    "timeline-egg-chair": {
+      "filename": "timeline-egg-chair.jpg",
+      "path": "C:\\Users\\Nurja\\Projects\\nordic-minimalism\\images\\hero\\timeline-egg-chair.jpg",
+      "alt_text": "Arne Jacobsen Egg Chair in a Nordic minimalist setting with warm lighting, natural materials and subtle earth tones",
+      "prompt": "Professional photography in authentic Nordic minimalism style, \n        warm and inviting atmosphere, natural materials, soft lighting, \n        muted earth tones, hygge feeling, lagom balance, democratic design principles, Arne Jacobsen Egg Chair iconic Danish Modern design piece, clean white background, professional product photography, minimalist composition, warm lighting, authentic Nordic design, 1950s Danish furniture masterpiece, Nordic minimalism inspired scene with natural materials, warm lighting, and calm atmosphere, Use authentic Nordic color palette: warm whites (#FAFAF9), \n        linen (#F5F4F0), sage green (#8B9A8A), warm taupe (#B4A89A), \n        natural wood tones, soft grays, never pure white or black",
+      "user_prompt": "Arne Jacobsen Egg Chair iconic Danish Modern design piece, clean white background, professional product photography, minimalist composition, warm lighting, authentic Nordic design, 1950s Danish furniture masterpiece",
+      "generated": "2025-11-10T19:11:11.949695",
+      "category": "hero",
+      "style": "nordic_minimalism"
     }
   },
-  "last_updated": "2025-11-10T18:03:28.837158"
+  "last_updated": "2025-11-10T19:11:11.949754"
 }
