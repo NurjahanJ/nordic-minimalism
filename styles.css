@@ -439,15 +439,15 @@ p {
 
 .philosophy-grid {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: var(--space-xl);
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-m);
     max-width: 1200px;
     margin: 0 auto;
 }
 
-@media (min-width: 480px) {
+@media (max-width: 479px) {
     .philosophy-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr;
         gap: var(--space-xl);
     }
 }
@@ -455,12 +455,14 @@ p {
 .philosophy-item {
     text-align: center;
     padding: var(--space-l);
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.8);
     border-radius: var(--radius-soft);
     box-shadow: var(--shadow-soft);
-    min-height: 200px;
+    min-height: 180px;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .philosophy-visual {
