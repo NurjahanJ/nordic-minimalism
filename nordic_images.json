@@ -59,7 +59,57 @@
       "generated": "2025-11-10T19:11:11.949695",
       "category": "hero",
       "style": "nordic_minimalism"
+    },
+    "color-palette": {
+      "filename": "color-palette.jpg",
+      "path": "C:\\Users\\Nurja\\Projects\\nordic-minimalism\\images\\hero\\color-palette.jpg",
+      "alt_text": "Authentic Nordic minimalism interior with natural materials in warm earth tones under soft lighting.",
+      "prompt": "Professional photography in authentic Nordic minimalism style, \n        warm and inviting atmosphere, natural materials, soft lighting, \n        muted earth tones, hygge feeling, lagom balance, democratic design principles, Nordic minimalism inspired scene with natural materials, warm lighting, and calm atmosphere, Use authentic Nordic color palette: warm whites (#FAFAF9), \n        linen (#F5F4F0), sage green (#8B9A8A), warm taupe (#B4A89A), \n        natural wood tones, soft grays, never pure white or black",
+      "user_prompt": null,
+      "generated": "2025-11-11T00:23:18.452321",
+      "category": "hero",
+      "style": "nordic_minimalism"
+    },
+    "materials": {
+      "filename": "materials.jpg",
+      "path": "C:\\Users\\Nurja\\Projects\\nordic-minimalism\\images\\materials\\materials.jpg",
+      "alt_text": "Nordic minimalism interior with warm, earth-toned color palette and natural wood accents, illuminated by soft lighting.",
+      "prompt": "Professional photography in authentic Nordic minimalism style, \n        warm and inviting atmosphere, natural materials, soft lighting, \n        muted earth tones, hygge feeling, lagom balance, democratic design principles, Nordic minimalism inspired scene with natural materials, warm lighting, and calm atmosphere, Use authentic Nordic color palette: warm whites (#FAFAF9), \n        linen (#F5F4F0), sage green (#8B9A8A), warm taupe (#B4A89A), \n        natural wood tones, soft grays, never pure white or black",
+      "user_prompt": null,
+      "generated": "2025-11-11T00:24:06.930770",
+      "category": "materials",
+      "style": "nordic_minimalism"
+    },
+    "lighting": {
+      "filename": "lighting.jpg",
+      "path": "C:\\Users\\Nurja\\Projects\\nordic-minimalism\\images\\hero\\lighting.jpg",
+      "alt_text": "Nordic minimalism inspired interior showcasing natural materials, warm lighting and earth tones.",
+      "prompt": "Professional photography in authentic Nordic minimalism style, \n        warm and inviting atmosphere, natural materials, soft lighting, \n        muted earth tones, hygge feeling, lagom balance, democratic design principles, Nordic minimalism inspired scene with natural materials, warm lighting, and calm atmosphere, Use authentic Nordic color palette: warm whites (#FAFAF9), \n        linen (#F5F4F0), sage green (#8B9A8A), warm taupe (#B4A89A), \n        natural wood tones, soft grays, never pure white or black",
+      "user_prompt": null,
+      "generated": "2025-11-11T00:24:43.599225",
+      "category": "hero",
+      "style": "nordic_minimalism"
+    },
+    "composition": {
+      "filename": "composition.jpg",
+      "path": "C:\\Users\\Nurja\\Projects\\nordic-minimalism\\images\\hero\\composition.jpg",
+      "alt_text": "Authentic Nordic minimalist room with warm lighting, earth tones, and natural materials",
+      "prompt": "Professional photography in authentic Nordic minimalism style, \n        warm and inviting atmosphere, natural materials, soft lighting, \n        muted earth tones, hygge feeling, lagom balance, democratic design principles, Nordic minimalism inspired scene with natural materials, warm lighting, and calm atmosphere, Use authentic Nordic color palette: warm whites (#FAFAF9), \n        linen (#F5F4F0), sage green (#8B9A8A), warm taupe (#B4A89A), \n        natural wood tones, soft grays, never pure white or black",
+      "user_prompt": null,
+      "generated": "2025-11-11T00:25:15.161114",
+      "category": "hero",
+      "style": "nordic_minimalism"
+    },
+    "natural-materials": {
+      "filename": "natural-materials.jpg",
+      "path": "C:\\Users\\Nurja\\Projects\\nordic-minimalism\\images\\materials\\natural-materials.jpg",
+      "alt_text": "Authentic Nordic minimalism composition with natural materials and a warm, earthy color palette.",
+      "prompt": "Professional photography in authentic Nordic minimalism style, \n        warm and inviting atmosphere, natural materials, soft lighting, \n        muted earth tones, hygge feeling, lagom balance, democratic design principles, Close-up arrangement of natural Nordic materials: birch wood grain texture, soft linen fabric, cozy wool textile, and smooth stone surfaces. Natural textures showcase, tactile materials display, Scandinavian craftsmanship materials, Nordic minimalism inspired scene with natural materials, warm lighting, and calm atmosphere, Use authentic Nordic color palette: warm whites (#FAFAF9), \n        linen (#F5F4F0), sage green (#8B9A8A), warm taupe (#B4A89A), \n        natural wood tones, soft grays, never pure white or black",
+      "user_prompt": "Close-up arrangement of natural Nordic materials: birch wood grain texture, soft linen fabric, cozy wool textile, and smooth stone surfaces. Natural textures showcase, tactile materials display, Scandinavian craftsmanship materials",
+      "generated": "2025-11-11T00:28:25.788657",
+      "category": "materials",
+      "style": "nordic_minimalism"
     }
   },
-  "last_updated": "2025-11-10T19:11:11.949754"
+  "last_updated": "2025-11-11T00:28:25.788675"
 }
