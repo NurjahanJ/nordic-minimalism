@@ -138,11 +138,12 @@ p {
 .header {
     background: rgba(248, 247, 244, 0.95);
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--color-neutral-greige);
-    padding: var(--space-m) 0;
+    border-bottom: 1px solid rgba(139, 154, 138, 0.1);
+    padding: var(--space-s) 0;
     position: sticky;
     top: 0;
     z-index: 100;
+    transition: all 0.3s ease;
 }
 
 .nav {
@@ -151,45 +152,83 @@ p {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 var(--space-m);
+    padding: 0 var(--space-l);
+    height: 60px;
 }
 
 .logo {
-    font-size: var(--font-size-h2);
-    font-weight: 300;
+    font-size: var(--font-size-h3);
+    font-weight: 400;
     color: var(--color-text-primary);
     margin: 0;
     text-decoration: none;
-    transition: color 0.2s ease;
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
 }
 
 .logo:hover {
     color: var(--color-accent-sage);
+    transform: translateY(-1px);
 }
 
 .nav-menu {
     display: flex;
     list-style: none;
-    gap: var(--space-m);
+    gap: var(--space-s);
+    align-items: center;
 }
 
 .nav-link {
     text-decoration: none;
     color: var(--color-text-secondary);
-    font-size: var(--font-size-body);
-    transition: color 0.2s ease;
+    font-size: var(--font-size-small);
+    font-weight: 400;
+    transition: all 0.3s ease;
     padding: var(--space-xs) var(--space-s);
     border-radius: var(--radius-gentle);
+    position: relative;
+    letter-spacing: 0.3px;
 }
 
 .nav-link:hover {
     color: var(--color-accent-sage);
     background-color: var(--color-base-linen);
+    transform: translateY(-1px);
+}
+
+.nav-link.active {
+    color: var(--color-accent-sage);
+    background-color: rgba(139, 154, 138, 0.1);
+}
+
+/* Mobile navigation adjustments */
+@media (max-width: 768px) {
+    .header {
+        padding: var(--space-xs) 0;
+    }
+    
+    .nav {
+        padding: 0 var(--space-m);
+        height: 50px;
+    }
+    
+    .logo {
+        font-size: var(--font-size-lg);
+    }
+    
+    .nav-menu {
+        gap: var(--space-xs);
+    }
+    
+    .nav-link {
+        font-size: var(--font-size-caption);
+        padding: var(--space-xs);
+    }
 }
 
 /* ===== MAIN CONTENT ===== */
 .main {
-    min-height: calc(100vh - 200px);
+    min-height: calc(100vh - 80px);
 }
 
 /* ===== HERO SECTION ===== */
@@ -443,7 +482,7 @@ p {
 
 .section-title {
     text-align: center;
-    margin-bottom: var(--space-xxl);
+    margin-bottom: var(--space-l);
     color: var(--color-text-primary);
     font-size: var(--font-size-h2);
     font-weight: 500;
@@ -457,7 +496,7 @@ p {
 .section-title::after {
     content: '';
     position: absolute;
-    bottom: -var(--space-l);
+    bottom: -var(--space-m);
     left: 50%;
     transform: translateX(-50%);
     width: 60px;
@@ -487,7 +526,7 @@ p {
 /* ===== CONCLUSION ACTIONS ===== */
 .conclusion-actions {
     display: flex;
-    gap: var(--space-l);
+    gap: var(--space-m);
     justify-content: center;
     margin-top: var(--space-xxl);
 }
@@ -497,14 +536,14 @@ p {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: var(--space-l) var(--space-xl);
+    padding: var(--space-m) var(--space-l);
     background-color: var(--color-base-warm-white);
     border: 1px solid rgba(180, 168, 154, 0.15);
     border-radius: var(--radius-soft);
     text-decoration: none;
     transition: all 0.3s ease;
     box-shadow: var(--shadow-gentle);
-    min-width: 200px;
+    min-width: 160px;
 }
 
 .action-button:hover {
@@ -514,7 +553,7 @@ p {
 }
 
 .button-text {
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-body);
     font-weight: 500;
     color: var(--color-text-primary);
     margin-bottom: var(--space-xs);
@@ -522,7 +561,7 @@ p {
 }
 
 .button-description {
-    font-size: var(--font-size-caption);
+    font-size: var(--font-size-small);
     color: var(--color-text-secondary);
     line-height: var(--line-height-relaxed);
 }
@@ -531,13 +570,22 @@ p {
 @media (max-width: 768px) {
     .conclusion-actions {
         flex-direction: column;
-        gap: var(--space-m);
+        gap: var(--space-s);
         align-items: center;
     }
     
     .action-button {
         width: 100%;
-        max-width: 280px;
+        max-width: 240px;
+        padding: var(--space-s) var(--space-m);
+    }
+    
+    .button-text {
+        font-size: var(--font-size-small);
+    }
+    
+    .button-description {
+        font-size: var(--font-size-caption);
     }
 }
 
@@ -585,7 +633,7 @@ p {
 
 .principles .section-title {
     text-align: center;
-    margin-bottom: calc(var(--space-xxl) * 1.5);
+    margin-bottom: var(--space-xl);
     max-width: 720px;
     margin-left: auto;
     margin-right: auto;
@@ -595,7 +643,7 @@ p {
     display: grid;
     grid-template-columns: 1fr;
     gap: var(--space-xl);
-    margin-top: var(--space-xxl);
+    margin-top: var(--space-xl);
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -1244,7 +1292,7 @@ html {
     margin: 0 auto;
     padding: 0 var(--space-l);
     display: grid;
-    grid-template-columns: 1.2fr 1fr;
+    grid-template-columns: 1fr 1.3fr;
     gap: var(--space-xxl);
     align-items: center;
     min-height: 60vh;
@@ -1312,7 +1360,7 @@ html {
 
 .intro-visual {
     position: relative;
-    height: 600px;
+    height: 500px;
     width: 100%;
     border-radius: var(--radius-soft);
     overflow: hidden;
@@ -1324,7 +1372,7 @@ html {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
+    object-position: center center;
     transition: transform 0.6s ease;
 }
 
@@ -1336,7 +1384,7 @@ html {
 @media (min-width: 1025px) {
     .intro-container {
         display: grid !important;
-        grid-template-columns: 1.2fr 1fr !important;
+        grid-template-columns: 1fr 1.3fr !important;
         align-items: center !important;
     }
     
@@ -1346,6 +1394,7 @@ html {
     
     .intro-visual {
         order: 2;
+        height: 550px;
     }
 }
 
@@ -1367,7 +1416,7 @@ html {
     
     .intro-visual {
         order: 1;
-        height: 400px;
+        height: 350px;
         margin-bottom: var(--space-l);
     }
     
@@ -1440,7 +1489,7 @@ html {
     display: grid;
     grid-template-columns: 1fr;
     gap: var(--space-l);
-    margin-top: var(--space-xxl);
+    margin-top: var(--space-xl);
     padding: 0;
 }
 
