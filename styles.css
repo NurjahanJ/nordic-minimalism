@@ -366,6 +366,7 @@ p {
     line-height: var(--line-height-loose);
     font-size: var(--font-size-body);
     margin-bottom: var(--space-m);
+    text-align: left;
 }
 
 .intro-text:last-child,
@@ -440,8 +441,8 @@ p {
 .philosophy-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: var(--space-xl);
-    max-width: 1200px;
+    gap: var(--space-l);
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -453,14 +454,15 @@ p {
 }
 
 .philosophy-item {
-    text-align: left;
-    padding: var(--space-l);
+    text-align: center;
+    padding: var(--space-m) var(--space-l);
     background: rgba(255, 255, 255, 0.6);
     border-radius: var(--radius-soft);
     box-shadow: var(--shadow-soft);
-    min-height: 200px;
+    min-height: 120px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .philosophy-visual {
@@ -519,6 +521,10 @@ p {
     background: var(--color-base-warm-white);
 }
 
+.design-principles .content-container {
+    max-width: 1400px;
+}
+
 .principles .section-title {
     text-align: center;
     margin-bottom: calc(var(--space-xxl) * 1.5);
@@ -530,47 +536,104 @@ p {
 .principles-content {
     display: grid;
     grid-template-columns: 1fr;
-    gap: var(--space-xxl);
-    max-width: 900px;
+    gap: var(--space-l);
+    width: 100%;
     margin: 0 auto;
+    padding: 0 var(--space-m);
 }
 
 @media (min-width: 768px) {
     .principles-content {
-        grid-template-columns: repeat(2, 1fr);
-        gap: calc(var(--space-xxl) * 1.5);
-        row-gap: calc(var(--space-xxl) * 2);
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--space-l);
+        padding: 0;
     }
 }
 
 .principle {
-    padding: 0;
-    background: none;
-    border-radius: 0;
-    box-shadow: none;
+    background: linear-gradient(135deg, var(--color-base-warm-white) 0%, var(--color-base-cream) 100%);
+    padding: var(--space-l) var(--space-l) calc(var(--space-l) + var(--space-s));
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(139, 154, 138, 0.08), 0 1px 3px rgba(139, 154, 138, 0.12);
     text-align: left;
+    border: none;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    position: relative;
+    overflow: hidden;
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    backdrop-filter: blur(10px);
+}
+
+.principle::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--color-accent-sage) 0%, var(--color-accent-dusty-blue) 50%, var(--color-accent-taupe) 100%);
+    opacity: 0;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.principle:hover {
+    transform: translateY(-3px) scale(1.01);
+    box-shadow: 0 8px 25px rgba(139, 154, 138, 0.15), 0 3px 10px rgba(139, 154, 138, 0.2);
+    background: linear-gradient(135deg, var(--color-base-cream) 0%, var(--color-base-linen) 100%);
+}
+
+.principle:hover::before {
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+.principle::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: var(--space-l);
+    right: var(--space-l);
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, var(--color-neutral-greige) 50%, transparent 100%);
+    opacity: 0.3;
 }
 
 .principle-title {
     color: var(--color-text-primary);
-    margin-bottom: var(--space-l);
-    font-size: var(--font-size-h3);
-    font-weight: 600;
+    margin-bottom: var(--space-s);
+    font-size: var(--font-size-h4);
+    font-weight: 500;
     line-height: 1.2;
+    position: relative;
+    letter-spacing: -0.02em;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.principle:hover .principle-title {
+    color: var(--color-accent-sage-deep);
+    transform: translateX(4px);
 }
 
 .principle-text {
-    color: var(--color-text-secondary);
-    line-height: var(--line-height-body);
-    font-size: var(--font-size-body);
-    font-weight: 300;
-    max-width: 400px;
+    color: var(--color-text-light);
+    line-height: 1.6;
+    font-size: var(--font-size-small);
+    margin: 0;
+    position: relative;
+    font-weight: 400;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    opacity: 0.9;
 }
 
-/* ===== EXAMPLES SECTION ===== */
-.examples {
-    padding: var(--section-padding-m) 0 var(--section-padding-l);
-    background: var(--color-base-cream);
+.principle:hover .principle-text {
+    color: var(--color-text-secondary);
+    opacity: 1;
+    transform: translateX(4px);
 }
 
 .examples-grid {
@@ -1133,6 +1196,7 @@ html {
     grid-template-columns: 1fr;
     gap: var(--space-l);
     margin-top: var(--space-xl);
+    width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -1143,10 +1207,14 @@ html {
 
 .philosophy-item {
     background-color: var(--color-base-warm-white);
-    padding: var(--space-l);
+    padding: var(--space-m) var(--space-l);
     border-radius: var(--radius-soft);
     box-shadow: var(--shadow-gentle);
     text-align: center;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .philosophy-title {
