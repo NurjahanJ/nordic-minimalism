@@ -121,6 +121,7 @@ p {
     max-width: 720px;  /* Single-column readability */
     margin: 0 auto;
     padding: 0 var(--space-l);
+    text-align: left;
 }
 
 @media (min-width: 768px) {
@@ -432,59 +433,8 @@ p {
     }
 }
 
-/* ===== PHILOSOPHY SECTION ===== */
-.philosophy {
-    padding: var(--section-padding-m) 0;
-    background: var(--color-base-warm-white);
-}
-
-.philosophy-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: var(--space-l);
-    width: 100%;
-    margin: 0 auto;
-}
-
-@media (min-width: 768px) {
-    .philosophy-grid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: var(--space-xl);
-    }
-}
-
-.philosophy-item {
-    text-align: center;
-    padding: var(--space-m) var(--space-l);
-    background: rgba(255, 255, 255, 0.6);
-    border-radius: var(--radius-soft);
-    box-shadow: var(--shadow-soft);
-    min-height: 120px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.philosophy-visual {
-    display: none;
-}
-
-.philosophy-title {
-    color: var(--color-text-primary);
-    margin-bottom: var(--space-m);
-    font-weight: 600;
-    font-size: var(--font-size-h3);
-    letter-spacing: 0.01em;
-    line-height: 1.2;
-}
-
-.philosophy-text {
-    color: var(--color-text-secondary);
-    line-height: var(--line-height-body);
-    font-size: var(--font-size-body);
-    font-weight: 300;
-    flex-grow: 1;
-}
+/* ===== REMOVED DUPLICATE PHILOSOPHY SECTION ===== */
+/* Philosophy styles consolidated below to avoid conflicts */
 
 /* ===== VISUAL DIVIDERS ===== */
 .section-divider {
@@ -1023,17 +973,8 @@ html {
     box-shadow: var(--shadow-gentle);
 }
 
-.principle-title {
-    font-size: var(--font-size-xl);
-    font-weight: 500;
-    color: var(--color-text-primary);
-    margin-bottom: var(--space-s);
-}
-
-.principle-text {
-    color: var(--color-text-secondary);
-    line-height: var(--line-height-loose);
-}
+/* ===== REMOVED DUPLICATE PRINCIPLE STYLES ===== */
+/* Using the main principle styles defined above */
 
 /* ===== DESIGNERS PAGE STYLES ===== */
 .designers-section {
@@ -1186,48 +1127,8 @@ html {
     margin-bottom: var(--space-m);
 }
 
-.core-philosophy {
-    padding: var(--space-xxl) 0;
-    background-color: var(--color-base-linen);
-}
-
-.philosophy-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: var(--space-l);
-    margin-top: var(--space-xl);
-    width: 100%;
-}
-
-@media (min-width: 768px) {
-    .philosophy-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-.philosophy-item {
-    background-color: var(--color-base-warm-white);
-    padding: var(--space-m) var(--space-l);
-    border-radius: var(--radius-soft);
-    box-shadow: var(--shadow-gentle);
-    text-align: center;
-    min-height: 120px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.philosophy-title {
-    font-size: var(--font-size-xl);
-    font-weight: 500;
-    color: var(--color-accent-sage);
-    margin-bottom: var(--space-s);
-}
-
-.philosophy-description {
-    color: var(--color-text-secondary);
-    line-height: var(--line-height-loose);
-}
+/* ===== REMOVED DUPLICATE PHILOSOPHY STYLES ===== */
+/* These were conflicting with the main principle styles above */
 
 .design-principles {
     padding: var(--space-xxl) 0;
