@@ -114,6 +114,17 @@ nordic-minimalism/
 - **Best Practices**: 100
 - **SEO**: 95+
 
+#### Desktop Lighthouse Reports
+
+**Homepage (index.html)**
+![Homepage Lighthouse Report](images/Lighthouse%20Reports/index.png)
+
+**Designers Page (designers.html)**
+![Designers Lighthouse Report](images/Lighthouse%20Reports/designers.png)
+
+**Timeline Page (timeline.html)**
+![Timeline Lighthouse Report](images/Lighthouse%20Reports/timeline.png)
+
 ### Technical Excellence
 - **Modern CSS**: 2,376 lines of sophisticated styling
 - **Responsive Images**: WebP format with multiple sizes
