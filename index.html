@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover authentic Nordic Minimalism design principles. Explore Scandinavian aesthetics that embrace balance, comfort, and natural beauty.">
     <title>Nordic Minimalism — Calm, Spacious, Natural Design</title>
-    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preload" href="images/hero/hero-main.webp" as="image" type="image/webp">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"></noscript>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="header">
@@ -31,7 +34,15 @@
     <main class="main">
         <section class="hero">
             <div class="hero-background">
-                <img src="images/hero/hero-main.webp" alt="Nordic minimalist interior with natural light and warm materials" class="hero-image" loading="eager">
+                <img src="images/hero/hero-main.webp" 
+                     srcset="images/hero/hero-main_400w.webp 400w, 
+                             images/hero/hero-main_800w.webp 800w, 
+                             images/hero/hero-main.webp 1200w"
+                     sizes="100vw"
+                     alt="Nordic minimalist interior with natural light and warm materials" 
+                     class="hero-image" 
+                     loading="eager" 
+                     fetchpriority="high">
             </div>
             <div class="hero-overlay"></div>
             <div class="hero-content">
@@ -76,7 +87,14 @@
                 </div>
                 
                 <div class="intro-visual">
-                    <img src="images/lifestyle/lifestyle-hygge.webp" alt="Nordic minimalist lifestyle showcasing natural materials, warm lighting, and cozy atmosphere" class="intro-image" loading="lazy">
+                    <img src="images/lifestyle/lifestyle-hygge.webp" 
+                         srcset="images/lifestyle/lifestyle-hygge_400w.webp 400w, 
+                                 images/lifestyle/lifestyle-hygge_800w.webp 800w, 
+                                 images/lifestyle/lifestyle-hygge.webp 1200w"
+                         sizes="(max-width: 768px) 100vw, 50vw"
+                         alt="Nordic minimalist lifestyle showcasing natural materials, warm lighting, and cozy atmosphere" 
+                         class="intro-image" 
+                         loading="lazy">
                 </div>
             </div>
         </section>
@@ -137,7 +155,7 @@
                         <div class="characteristic-image">
                             <img src="images/materials/materials.webp" alt="Nordic color palette showcase with warm off-whites, soft grays, and muted natural tones" loading="lazy">
                         </div>
-                        <h4 class="characteristic-title">Color Palette</h4>
+                        <h3 class="characteristic-title">Color Palette</h3>
                         <p class="characteristic-text">Warm off-whites, soft grays, and muted natural tones. Never pure white or black—always colors with warmth and depth that reflect natural light beautifully.</p>
                     </div>
                     
@@ -145,7 +163,7 @@
                         <div class="characteristic-image">
                             <img src="images/materials/natural-materials.webp" alt="Natural Nordic materials like birch wood, linen, wool, and stone with subtle textures" loading="lazy">
                         </div>
-                        <h4 class="characteristic-title">Materials</h4>
+                        <h3 class="characteristic-title">Materials</h3>
                         <p class="characteristic-text">Natural materials like birch wood, linen, wool, and stone. Textures are subtle but present, adding tactile interest without visual noise.</p>
                     </div>
                     
@@ -153,7 +171,7 @@
                         <div class="characteristic-image">
                             <img src="images/hero/lighting.webp" alt="Soft, diffused natural lighting in Nordic minimalist interior creating warm, even illumination" loading="lazy">
                         </div>
-                        <h4 class="characteristic-title">Light</h4>
+                        <h3 class="characteristic-title">Light</h3>
                         <p class="characteristic-text">Soft, diffused natural light is prioritized. Artificial lighting mimics natural patterns, creating warm, even illumination that enhances rather than dominates.</p>
                     </div>
                     
@@ -161,7 +179,7 @@
                         <div class="characteristic-image">
                             <img src="images/hero/composition.webp" alt="Nordic minimalist composition showing asymmetrical balance with generous white space and clear hierarchy" loading="lazy">
                         </div>
-                        <h4 class="characteristic-title">Composition</h4>
+                        <h3 class="characteristic-title">Composition</h3>
                         <p class="characteristic-text">Asymmetrical balance with generous white space. Single-column layouts and clear hierarchy guide the eye gently through content.</p>
                     </div>
                 </div>

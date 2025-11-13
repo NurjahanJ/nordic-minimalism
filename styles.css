@@ -643,15 +643,15 @@ p {
 }
 
 .hero-button.primary {
-    background-color: var(--color-accent-sage);
-    color: var(--color-base-warm-white);
-    box-shadow: 0 4px 16px rgba(139, 154, 138, 0.3);
+    background-color: #6B7A6A;
+    color: #FFFFFF;
+    box-shadow: 0 4px 16px rgba(107, 122, 106, 0.3);
 }
 
 .hero-button.primary:hover {
-    background-color: var(--color-accent-sage-deep);
+    background-color: #5A6759;
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(139, 154, 138, 0.4);
+    box-shadow: 0 6px 20px rgba(90, 103, 89, 0.4);
 }
 
 .hero-button.secondary {

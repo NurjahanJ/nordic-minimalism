@@ -1,0 +1,186 @@
+https://nurjahanj.github.io/nordic-minimalism/index.html
+Desktop:
+89
+Accessibility
+These checks highlight opportunities to improve the accessibility of your web app. Automatic detection can only detect a subset of issues and does not guarantee the accessibility of your web app, so manual testing is also encouraged.
+Contrast
+Background and foreground colors do not have a sufficient contrast ratio.
+Low-contrast text is difficult or impossible for many users to read. Learn how to provide sufficient color contrast.
+Failing Elements
+Explore Philosophy
+<a href="#about" class="hero-button primary">
+These are opportunities to improve the legibility of your content.
+Navigation
+Heading elements are not in a sequentially-descending order
+Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. Learn more about heading order.
+Failing Elements
+Color Palette
+<h4 class="characteristic-title">
+These are opportunities to improve keyboard navigation in your application.
+Additional items to manually check (10)
+Show
+These items address areas which an automated testing tool cannot cover. Learn more in our guide on conducting an accessibility review.
+Passed audits (11)
+Show
+Not applicable (47)
+
+Mobile
+
+
+88
+Performance
+93
+Accessibility
+100
+Best Practices
+91
+SEO
+88
+Performance
+Values are estimated and may vary. The performance score is calculated directly from these metrics.See calculator.
+0–49
+50–89
+90–100
+Final Screenshot
+
+Metrics
+Expand view
+First Contentful Paint
+2.6 s
+Largest Contentful Paint
+3.3 s
+Total Blocking Time
+0 ms
+Cumulative Layout Shift
+0
+Speed Index
+3.2 s
+View Treemap
+Screenshot
+Screenshot
+Screenshot
+Screenshot
+Screenshot
+Screenshot
+Screenshot
+Screenshot
+Show audits relevant to:
+
+All
+
+FCP
+
+LCP
+Insights
+Use efficient cache lifetimes Est savings of 580 KiB
+A long cache lifetime can speed up repeat visits to your page. Learn more about caching.LCPFCPUnscored
+Request
+Cache TTL
+Transfer Size
+GitHub utility 1st party
+633 KiB
+…hero/hero-main.webp(nurjahanj.github.io)
+10m
+270 KiB
+…lifestyle/lifestyle-hygge.webp(nurjahanj.github.io)
+10m
+270 KiB
+…textures/texture-linen-fabric_400w.webp(nurjahanj.github.io)
+10m
+45 KiB
+…textures/texture-birch-wood_400w.webp(nurjahanj.github.io)
+10m
+38 KiB
+/nordic-minimalism/styles.css(nurjahanj.github.io)
+10m
+10 KiB
+Render blocking requests Est savings of 1,760 ms
+Requests are blocking the page's initial render, which may delay LCP. Deferring or inlining can move these network requests out of the critical path.LCPFCPUnscored
+URL
+Transfer Size
+Duration
+GitHub utility 1st party
+10.5 KiB	170 ms
+/nordic-minimalism/styles.css(nurjahanj.github.io)
+10.5 KiB
+170 ms
+Google Fonts cdn 
+1.5 KiB	750 ms
+/css2?family=Inter:wght@300;400;500;600&display=swap(fonts.googleapis.com)
+1.5 KiB
+750 ms
+Improve image delivery Est savings of 387 KiB
+Reducing the download time of images can improve the perceived load time of the page and LCP. Learn more about optimizing image sizeLCPFCPUnscored
+URL
+Resource Size
+Est Savings
+GitHub utility 1st party
+619.8 KiB	387.2 KiB
+Nordic minimalist lifestyle showcasing natural materials, warm lighting, and co…
+<img src="images/lifestyle/lifestyle-hygge.webp" alt="Nordic minimalist lifestyle showcasing natural materials, warm lighting, a…" class="intro-image" loading="lazy">
+…lifestyle/lifestyle-hygge.webp(nurjahanj.github.io)
+268.9 KiB
+207.8 KiB
+Increasing the image compression factor could improve this image's download size.
+78.7 KiB
+This image file is larger than it needs to be (974x1200) for its displayed dimensions (613x613). Use responsive images to reduce the image download size.
+182.6 KiB
+Nordic minimalist interior with natural light and warm materials
+<img src="images/hero/hero-main.webp" alt="Nordic minimalist interior with natural light and warm materials" class="hero-image" loading="eager">
+…hero/hero-main.webp(nurjahanj.github.io)
+269.3 KiB
+149.8 KiB
+Increasing the image compression factor could improve this image's download size.
+149.8 KiB
+body > main.main > section.design-principles > ::before
+<::before>
+…textures/texture-linen-fabric_400w.webp(nurjahanj.github.io)
+44.3 KiB
+18.3 KiB
+Increasing the image compression factor could improve this image's download size.
+18.3 KiB
+body > main.main > section.visual-characteristics > ::before
+<::before>
+…textures/texture-birch-wood_400w.webp(nurjahanj.github.io)
+37.3 KiB
+11.2 KiB
+Increasing the image compression factor could improve this image's download size.
+11.2 KiB
+LCP request discovery
+Optimize LCP by making the LCP image discoverable from the HTML immediately, and avoiding lazy-loadingLCPUnscored
+Request is discoverable in initial document
+lazy load not applied
+fetchpriority=high should be applied
+Nordic minimalist interior with natural light and warm materials
+<img src="images/hero/hero-main.webp" alt="Nordic minimalist interior with natural light and warm materials" class="hero-image" loading="eager">
+Network dependency tree
+Avoid chaining critical requests by reducing the length of chains, reducing the download size of resources, or deferring the download of unnecessary resources to improve page load.LCPUnscored
+Maximum critical path latency: 301 ms
+Initial Navigation
+/nordic-minimalism/index.html(nurjahanj.github.io) - 117 ms, 4.51 KiB
+/nordic-minimalism/styles.css(nurjahanj.github.io) - 213 ms, 10.48 KiB
+/css2?family=Inter:wght@300;400;500;600&display=swap(fonts.googleapis.com) - 122 ms, 1.46 KiB
+…v20/UcC73FwrK….woff2(fonts.gstatic.com) - 301 ms, 48.09 KiB
+Preconnected origins
+preconnect hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.
+no origins were preconnected
+Preconnect candidates
+Add preconnect hints to your most important origins, but try to use no more than 4.
+No additional origins are good candidates for preconnecting
+Optimize DOM size
+LCP breakdown
+3rd parties
+These insights are also available in the Chrome DevTools Performance Panel - record a trace to view more detailed information.
+Diagnostics
+Minify CSS Est savings of 3 KiB
+Minifying CSS files can reduce network payload sizes. Learn how to minify CSS.LCPFCPUnscored
+URL
+Transfer Size
+Est Savings
+GitHub utility 1st party
+10.5 KiB	3.2 KiB
+/nordic-minimalism/styles.css(nurjahanj.github.io)
+10.5 KiB
+3.2 KiB
+More information about the performance of your application. These numbers don't directly affect the Performance score.
+Passed audits (18)
