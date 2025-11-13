@@ -2,7 +2,7 @@
 
 A comprehensive website demonstrating authentic Scandinavian design principles through research-driven implementation.
 
-# 🌐 Live Site](https://[username].github.io/nordic-minimalism
+# 🌐 Live Site] [(https://[username].github.io/nordic-minimalism](https://nurjahanj.github.io/nordic-minimalism/)
 [Documentation](docs/DEPLOYMENT.md)
 
 ## About
