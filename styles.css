@@ -263,12 +263,13 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(
-        135deg,
-        rgba(250, 250, 249, 0.4) 0%,
-        rgba(248, 247, 244, 0.3) 50%,
-        rgba(245, 244, 240, 0.4) 100%
-    );
+    background: 
+        radial-gradient(ellipse at center top, rgba(139, 154, 138, 0.08) 0%, transparent 70%),
+        linear-gradient(135deg,
+            rgba(250, 250, 249, 0.4) 0%,
+            rgba(248, 247, 244, 0.3) 50%,
+            rgba(245, 244, 240, 0.4) 100%
+        );
     z-index: 2;
 }
 
@@ -407,25 +408,40 @@ p {
     position: relative;
 }
 
-/* Alternating section backgrounds for visual rhythm */
+/* Alternating section backgrounds with subtle sage tints for visual rhythm */
 .cultural-context {
-    background-color: var(--color-base-linen);
+    background: linear-gradient(135deg, 
+        rgba(139, 154, 138, 0.02) 0%, 
+        var(--color-base-linen) 30%, 
+        var(--color-base-linen) 100%);
 }
 
 .design-principles {
-    background-color: var(--color-base-warm-white);
+    background: linear-gradient(135deg, 
+        var(--color-base-warm-white) 0%, 
+        rgba(139, 154, 138, 0.015) 50%, 
+        var(--color-base-warm-white) 100%);
 }
 
 .visual-characteristics {
-    background-color: var(--color-base-cream);
+    background: linear-gradient(135deg, 
+        rgba(139, 154, 138, 0.025) 0%, 
+        var(--color-base-cream) 40%, 
+        var(--color-base-cream) 100%);
 }
 
 .modern-relevance {
-    background-color: var(--color-base-warm-white);
+    background: linear-gradient(135deg, 
+        var(--color-base-warm-white) 0%, 
+        rgba(139, 154, 138, 0.02) 60%, 
+        var(--color-base-warm-white) 100%);
 }
 
 .conclusion {
-    background-color: var(--color-base-linen);
+    background: linear-gradient(135deg, 
+        rgba(139, 154, 138, 0.03) 0%, 
+        var(--color-base-linen) 35%, 
+        var(--color-base-linen) 100%);
 }
 
 /* Ensure all sections have consistent styling */
@@ -440,7 +456,7 @@ p {
     position: relative;
 }
 
-/* Subtle texture overlays for visual depth */
+/* Enhanced texture overlays for sophisticated Nordic depth */
 .section::before {
     content: '';
     position: absolute;
@@ -448,14 +464,29 @@ p {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('images/textures/texture-linen-fabric_400w.webp');
-    opacity: 0.015;
+    background-image: 
+        radial-gradient(circle at 30% 20%, rgba(139, 154, 138, 0.008) 0%, transparent 50%),
+        url('images/textures/texture-linen-fabric_400w.webp');
+    opacity: 0.012;
     pointer-events: none;
+    mix-blend-mode: multiply;
 }
 
-.section:nth-child(even)::before {
-    background-image: url('images/textures/texture-birch-wood_400w.webp');
-    opacity: 0.02;
+.cultural-context::before,
+.visual-characteristics::before,
+.conclusion::before {
+    background-image: 
+        radial-gradient(ellipse at 70% 80%, rgba(180, 168, 154, 0.01) 0%, transparent 60%),
+        url('images/textures/texture-birch-wood_400w.webp');
+    opacity: 0.018;
+}
+
+.design-principles::before,
+.modern-relevance::before {
+    background-image: 
+        radial-gradient(circle at 60% 40%, rgba(139, 154, 138, 0.006) 0%, transparent 70%),
+        url('images/textures/texture-linen-fabric_400w.webp');
+    opacity: 0.015;
 }
 
 /* ===== PAGE HEADERS ===== */
@@ -496,7 +527,7 @@ p {
 .section-title::after {
     content: '';
     position: absolute;
-    bottom: -var(--space-m);
+    bottom: -4px;
     left: 50%;
     transform: translateX(-50%);
     width: 60px;
@@ -515,6 +546,24 @@ p {
     font-size: var(--font-size-body);
     margin-bottom: var(--space-m);
     text-align: left;
+}
+
+/* Specific spacing adjustments for tighter title-content gaps */
+.cultural-context .section-title,
+.design-principles .section-title,
+.visual-characteristics .section-title,
+.modern-relevance .section-title,
+.conclusion .section-title {
+    margin-bottom: var(--space-m);
+}
+
+/* Content spacing adjustments */
+.relevance-content {
+    margin-top: var(--space-l);
+}
+
+.conclusion-text {
+    margin-top: var(--space-l);
 }
 
 .intro-text:last-child,
@@ -643,7 +692,7 @@ p {
     display: grid;
     grid-template-columns: 1fr;
     gap: var(--space-xl);
-    margin-top: var(--space-xl);
+    margin-top: var(--space-l);
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -665,7 +714,9 @@ p {
 }
 
 .principle {
-    background: linear-gradient(135deg, var(--color-base-warm-white) 0%, var(--color-base-cream) 100%);
+    background: 
+        radial-gradient(ellipse at top left, rgba(139, 154, 138, 0.03) 0%, transparent 60%),
+        linear-gradient(135deg, var(--color-base-warm-white) 0%, var(--color-base-cream) 100%);
     padding: var(--space-l) var(--space-l) calc(var(--space-l) + var(--space-s));
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(139, 154, 138, 0.08), 0 1px 3px rgba(139, 154, 138, 0.12);
@@ -1282,7 +1333,10 @@ html {
 /* ===== ABOUT PAGE STYLES ===== */
 .about-intro {
     padding: var(--space-xxl) 0;
-    background-color: var(--color-base-white);
+    background: linear-gradient(180deg, 
+        var(--color-base-warm-white) 0%, 
+        rgba(245, 244, 240, 0.3) 50%, 
+        var(--color-base-warm-white) 100%);
     width: 100%;
     overflow: hidden;
 }
@@ -1489,7 +1543,7 @@ html {
     display: grid;
     grid-template-columns: 1fr;
     gap: var(--space-l);
-    margin-top: var(--space-xl);
+    margin-top: var(--space-l);
     padding: 0;
 }
 
