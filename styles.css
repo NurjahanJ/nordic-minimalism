@@ -197,8 +197,8 @@ p {
 }
 
 .nav-link.active {
-    color: var(--color-accent-sage);
-    background-color: rgba(139, 154, 138, 0.1);
+    color: #5A6759;
+    background-color: rgba(90, 103, 89, 0.15);
 }
 
 /* ===== HAMBURGER MENU ===== */
@@ -832,7 +832,8 @@ p {
 .design-principles .section-title,
 .visual-characteristics .section-title,
 .modern-relevance .section-title,
-.conclusion .section-title {
+.conclusion .section-title,
+.timeline-section .section-title {
     margin-bottom: var(--space-m);
 }
 
@@ -1438,10 +1439,10 @@ p {
     
     .nav-link:hover,
     .nav-link.active {
-        background: rgba(139, 154, 138, 0.15);
-        color: var(--color-accent-sage);
+        background: rgba(90, 103, 89, 0.15);
+        color: #5A6759;
         transform: translateY(-2px);
-        box-shadow: 0 8px 25px rgba(139, 154, 138, 0.2);
+        box-shadow: 0 8px 25px rgba(90, 103, 89, 0.2);
     }
     
     .hero {
@@ -1711,7 +1712,7 @@ html {
 .timeline-year {
     font-size: var(--font-size-small);
     font-weight: 600;
-    color: var(--color-accent-sage);
+    color: #5A6759;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     margin-bottom: var(--space-xs);
@@ -2618,8 +2619,8 @@ html {
 
 /* ===== ACTIVE NAVIGATION STATE ===== */
 .nav-link.active {
-    color: var(--color-accent-sage);
-    background-color: var(--color-base-linen);
+    color: #5A6759;
+    background-color: rgba(90, 103, 89, 0.1);
 }
 
 /* ===== NORDIC DESIGN VALIDATION ===== */
